@@ -1,6 +1,8 @@
 package saru;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class ResultDAO {
     private static ResultDAO resultDAO = new ResultDAO();

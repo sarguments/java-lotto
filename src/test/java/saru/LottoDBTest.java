@@ -1,14 +1,20 @@
 package saru;
 
-import java.sql.*;
-import java.util.*;
+import org.junit.Before;
+import org.junit.Test;
+import saru.domain.LottoLine;
+import saru.domain.LottoMaker;
+import saru.domain.LottoNum;
+import saru.domain.WinningLotto;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-
-import org.junit.*;
-import saru.domain.*;
 
 public class LottoDBTest {
     private LottoDB lottoDB;
@@ -17,7 +23,7 @@ public class LottoDBTest {
     public void init() {
         String addr = "jdbc:mysql://localhost/LOTTO";
         String user = "saru";
-        String pw = "kke";
+        String pw = "kke25252";
 
         LottoDB.initLottoDB(addr, user, pw);
         lottoDB = LottoDB.getInstance();

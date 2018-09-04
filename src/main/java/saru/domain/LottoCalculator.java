@@ -2,7 +2,6 @@ package saru.domain;
 
 import saru.Result;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class LottoCalculator {

@@ -1,10 +1,14 @@
 package saru;
 
-import saru.domain.*;
+import org.junit.Before;
+import org.junit.Test;
+import saru.domain.LottoLine;
+import saru.domain.LottoMaker;
+import saru.domain.LottoNum;
+import saru.domain.WinningLotto;
 
-import java.util.*;
-
-import org.junit.*;
+import java.util.ArrayList;
+import java.util.List;
 
 import static junit.framework.TestCase.assertEquals;
 

@@ -1,9 +1,13 @@
 package saru;
 
-import saru.view.*;
-import saru.domain.*;
+import saru.domain.LottoCalculator;
+import saru.domain.LottoLine;
+import saru.domain.LottoMaker;
+import saru.domain.LottoUtil;
+import saru.view.Input;
+import saru.view.Output;
 
-import java.util.*;
+import java.util.List;
 
 public class LottoMain {
     private static LottoMaker lottoMaker = LottoMaker.of();

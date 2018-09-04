@@ -1,13 +1,15 @@
 package saru;
 
-import saru.domain.*;
-import saru.view.*;
+import org.junit.Test;
+import saru.domain.LottoLine;
+import saru.domain.LottoMaker;
+import saru.view.Input;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import static junit.framework.TestCase.assertEquals;
-
-import org.junit.Test;
 
 public class InputTest {
     private static LottoMaker lottoMaker = LottoMaker.of();

@@ -1,8 +1,11 @@
 package saru.view;
 
-import saru.domain.*;
+import saru.domain.LottoLine;
+import saru.domain.LottoMaker;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 // SonarLint StandOutput warning 방지용
 @java.lang.SuppressWarnings("squid:S106")

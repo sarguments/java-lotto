@@ -1,6 +1,6 @@
 package saru.domain;
 
-import java.util.*;
+import java.util.List;
 
 public class WinningLotto {
     private List<LottoNum> winningNumbers;

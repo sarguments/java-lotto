@@ -1,6 +1,7 @@
 package saru;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Result {
     private Map<Rank, Integer> hitNums = new HashMap<>();
@@ -11,16 +12,16 @@ public class Result {
         initHitNums();
     }
 
+    public static Result of(int buyNum) {
+        return new Result(buyNum);
+    }
+
     private void initHitNums() {
         hitNums.put(Rank.FIRST, 0);
         hitNums.put(Rank.SECOND, 0);
         hitNums.put(Rank.THIRD, 0);
         hitNums.put(Rank.FOURTH, 0);
         hitNums.put(Rank.FIFTH, 0);
-    }
-
-    public static Result of(int buyNum) {
-        return new Result(buyNum);
     }
 
     // true 를 넘겨야 보너스번호에 해당

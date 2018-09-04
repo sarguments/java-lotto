@@ -1,6 +1,9 @@
 package saru.domain;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 // nums, lines = list
 public class LottoMaker {
@@ -23,8 +26,7 @@ public class LottoMaker {
     public List<LottoNum> makeAutoLottoNums() {
         Collections.shuffle(baseNums);
         List<LottoNum> subList = baseNums.subList(0, ARR_NUM);
-        Collections.sort(subList,
-                Comparator.comparingInt(LottoNum::getNum));
+        subList.sort(Comparator.comparingInt(LottoNum::getNum));
 
         return new ArrayList<>(subList);
     }

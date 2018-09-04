@@ -1,15 +1,19 @@
 package saru;
 
-import saru.domain.*;
-import saru.view.*;
-
-import java.util.*;
-
-import static spark.Spark.*;
-
+import saru.domain.LottoCalculator;
+import saru.domain.LottoLine;
+import saru.domain.LottoMaker;
+import saru.domain.LottoUtil;
+import saru.view.Input;
 import spark.ModelAndView;
 import spark.Request;
 import spark.template.handlebars.HandlebarsTemplateEngine;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import static spark.Spark.*;
 
 public class WebMain {
     private static List<LottoLine> storeLottoLines = null;
@@ -49,9 +53,9 @@ public class WebMain {
     }
 
     private static void initWebMain() {
-        String addr = "jdbc:mysql://localhost/LOTTO";
+        String addr = "jdbc:mysql://localhost/LOTTO?characterEncoding=UTF-8&serverTimezone=UTC";
         String user = "saru";
-        String pw = "kke";
+        String pw = "비번을 여기에";
 
         LottoDB.initLottoDB(addr, user, pw);
 

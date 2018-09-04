@@ -15,14 +15,6 @@ public enum Rank {
         this.winningMoney = winningMoney;
     }
 
-    public int getCountOfMatch() {
-        return countOfMatch;
-    }
-
-    public int getWinningMoney() {
-        return winningMoney;
-    }
-
     // 맞힌 갯수와 보너스번호 매칭 여부로 랭크 enum 을 얻는다
     public static Rank valueOf(int countOfMatch, boolean matchBonus) {
         Rank[] ranks = values();
@@ -37,5 +29,13 @@ public enum Rank {
         }
 
         return null;
+    }
+
+    public int getCountOfMatch() {
+        return countOfMatch;
+    }
+
+    public int getWinningMoney() {
+        return winningMoney;
     }
 }
